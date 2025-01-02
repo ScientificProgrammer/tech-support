@@ -2,7 +2,7 @@
 
 ## Installation Steps
 
-1. Set an environment variable to for a tmp install dir.
+1. Set an environment variable for a tmp install dir.
 
 ```bash
 TMPLIBREOFFICEINSTALLDIR=/tmp/20250102_143614.install_libre_office/LibreOffice_24.8.4.2_Linux_x86-64_deb/DEBS
@@ -22,7 +22,7 @@ cd "${TMPLIBREOFFICEINSTALLDIR:-}"
 
 4. Use `curl` to download the archive.
 
-Note: `wget` would work too. However, when something goes wrong, I find `curl` more useful.
+**Note:** `wget` would work too. However, when something goes wrong, I find `curl` more useful (and powerful).
 
 ```bash
 curl -O -L https://download.documentfoundation.org/libreoffice/stable/24.8.4/deb/x86_64/LibreOffice_24.8.4_Linux_x86-64_deb.tar.gz
@@ -51,6 +51,8 @@ sudo apt install ./*.deb
 ```bash
 libreoffice --version
 ```
+
+---
 
 ## Sample Output
 
